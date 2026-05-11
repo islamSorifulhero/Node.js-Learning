@@ -2,7 +2,8 @@ import { createServer, IncomingMessage, ServerResponse } from "http";
 
 const server = createServer(
     (req: IncomingMessage, res: ServerResponse) => {
-        console.log(req);
+        const url = req.url;
+        const method = req.method;
     }
 )
 
