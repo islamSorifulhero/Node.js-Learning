@@ -89,7 +89,6 @@ export const productController = async (
         }),
       );
     }
-
     // console.log(products[index]);
     products[index] = { id: products[index].id, ...body };
 
@@ -114,7 +113,6 @@ export const productController = async (
         }),
       );
     }
-
     // const arr = ["1", "2", "3", "4"];
     // arr.splice(2, 1);
     // console.log(arr);
