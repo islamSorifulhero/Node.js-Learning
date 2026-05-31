@@ -8,12 +8,18 @@ export const productController = async (
   req: IncomingMessage,
   res: ServerResponse,
 ) => {
+  // const url = req.url;
+  // const method = req.method;
+  
   const url = req.url;
   const method = req.method;
   // /products =>  /products/1  => ['','products','1']
 
-  const urlParts = url?.split("/");
+  // const urlParts = url?.split("/");
+
+  const urlParts = url?.splice("/");
   // console.log(urlParts);
+  
   const id =
     urlParts && urlParts[1] === "products" ? Number(urlParts[2]) : null;
   // console.log("This is the acutal id : ", id);
